@@ -1,22 +1,95 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to My jQuery Tutorials</title>
+    <style>
+        /* Reset some default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Segoe UI", Arial, sans-serif;
+            background: linear-gradient(135deg, #1f4037, #99f2c8);
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.3);
+            text-align: center;
+            width: 90%;
+            max-width: 600px;
+        }
+
+        h1 {
+            font-size: 2em;
+            margin-bottom: 20px;
+            text-shadow: 0 2px 5px rgba(0,0,0,0.3);
+        }
+
+        ul {
+            list-style: none;
+            margin-top: 20px;
+        }
+
+        li {
+            margin: 10px 0;
+        }
+
+        a {
+            display: block;
+            text-decoration: none;
+            background: rgba(255, 255, 255, 0.2);
+            color: #fff;
+            padding: 12px 20px;
+            border-radius: 10px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+        }
+
+        a:hover {
+            background: #fff;
+            color: #1f4037;
+            transform: scale(1.05);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+
+        footer {
+            margin-top: 30px;
+            font-size: 0.9em;
+            color: rgba(255,255,255,0.8);
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome to My jQuery Lessons</h1>
-    <ul>
-        <li><a href="jquery-part1.html">Part 1</a></li>
-        <li><a href="jquery-part2.html">Part 2</a></li>
-        <li><a href="jquery-part3.html">Part 3</a></li>
-        <li><a href="jquery-part4.html">Part 4</a></li>
-        <li><a href="jquery-part5.html">Part 5</a></li>
-        <li><a href="jquery-part6.html">Part 6</a></li>
-        <li><a href="jquery-part7.html">Part 7</a></li>
-        <li><a href="jquery-part8.html">Part 8</a></li>
-        <li><a href="jquery-part9.html">Part 9</a></li>
-        <li><a href="jquery-part10.html">Part 10</a></li>
-    </ul>
+    <div class="container">
+        <h1>Welcome to My jQuery Lessons</h1>
+        <ul>
+            <li><a href="jquery-part1.html">jQuery Part 1</a></li>
+            <li><a href="jquery-part2.html">jQuery Part 2</a></li>
+            <li><a href="jquery-part3.html">jQuery Part 3</a></li>
+            <li><a href="jquery-part4.html">jQuery Part 4</a></li>
+            <li><a href="jquery-part5.html">jQuery Part 5</a></li>
+            <li><a href="jquery-part6.html">jQuery Part 6</a></li>
+            <li><a href="jquery-part7.html">jQuery Part 7</a></li>
+            <li><a href="jquery-part8.html">jQuery Part 8</a></li>
+            <li><a href="jquery-part9.html">jQuery Part 9</a></li>
+            <li><a href="jquery-part10.html">jQuery Part 10</a></li>
+        </ul>
+        <footer>Created with 💻 by MrTroyce</footer>
+    </div>
 </body>
 </html>
