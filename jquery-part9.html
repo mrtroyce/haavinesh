@@ -121,7 +121,6 @@
 
   <!-- HOMEPAGE -->
   <div data-role="page" id="homePage" class="custom-page">
-
     <div data-role="header" class="custom-header">
       <h1>Media Hub</h1>
     </div>
@@ -131,52 +130,75 @@
       <ul data-role="listview" class="custom-list">
         <li data-icon="video"><a href="#videoPage" data-transition="turn">🎬 Videos</a></li>
         <li data-icon="audio"><a href="#audioPage" data-transition="slidedown">🎧 Audios</a></li>
-        <li data-icon="grid"><a href="#">🖼️ Pictures</a></li>
+        <li data-icon="grid"><a href="#picturePage" data-transition="pop">🖼️ Pictures</a></li>
       </ul>
     </div>
 
     <div data-role="footer" class="custom-footer" data-position="fixed">
-      <h4>© Jeevanraj DIT4A</h4>
+      <h4>© Haavinesh DIT4A</h4>
     </div>
-
   </div>
 
   <!-- VIDEOS PAGE -->
   <div data-role="page" id="videoPage" class="custom-page">
-
     <div data-role="header" class="custom-header">
       <h1>🎬 Video Panel</h1>
     </div>
 
     <div data-role="main" class="ui-content">
       <h2>Welcome to the Video Centre</h2>
+      <video width="320" height="180" controls style="border-radius:10px; box-shadow:0 4px 10px rgba(0,0,0,0.3);">
+        <source src="sample-video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <br>
       <a href="#homePage" class="custom-btn" data-transition="flow">⬅ Back to Home</a>
     </div>
 
     <div data-role="footer" class="custom-footer" data-position="fixed">
-      <h4>© Jeevanraj DIT4A</h4>
+      <h4>© Haavinesh DIT4A</h4>
     </div>
-
   </div>
 
   <!-- AUDIO PAGE -->
   <div data-role="page" id="audioPage" class="custom-page">
-
     <div data-role="header" class="custom-header">
       <h1>🎧 Audio Panel</h1>
     </div>
 
     <div data-role="main" class="ui-content">
       <h2>Welcome to the Audio Centre</h2>
+      <audio controls style="width:80%; border-radius:10px; box-shadow:0 4px 10px rgba(0,0,0,0.3);">
+        <source src="sample-audio.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+      <br>
       <a href="#homePage" class="custom-btn" data-transition="slidefade">⬅ Back to Home</a>
     </div>
 
     <div data-role="footer" class="custom-footer" data-position="fixed">
-      <h4>© HAAVINESH DIT4A</h4>
+      <h4>© Haavinesh DIT4A</h4>
+    </div>
+  </div>
+
+  <!-- PICTURE PAGE -->
+  <div data-role="page" id="picturePage" class="custom-page">
+    <div data-role="header" class="custom-header">
+      <h1>🖼️ Picture Gallery</h1>
     </div>
 
+    <div data-role="main" class="ui-content">
+      <h2>Explore the Picture Collection</h2>
+      <img src="https://via.placeholder.com/320x200" alt="Sample Image"
+        style="border-radius:10px; box-shadow:0 4px 10px rgba(0,0,0,0.3); width:85%; max-width:350px;">
+      <br>
+      <a href="#homePage" class="custom-btn" data-transition="slide">⬅ Back to Home</a>
+    </div>
+
+    <div data-role="footer" class="custom-footer" data-position="fixed">
+      <h4>© Haavinesh DIT4A</h4>
+    </div>
   </div>
 
 </body>
 </html>
-
