@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Politeknik Seberang Perai</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f6f8;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+    .navbar {
+      background-color: #003366;
+      padding: 15px;
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+    }
+    .nav-button {
+      color: white;
+      background: #004080;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .nav-button:hover {
+      background: #2196f3;
+    }
+    .logo {
+      width: 150px;
+      margin-top: 40px;
+      display: none;
+    }
+    .contact-info {
+      margin-top: 30px;
+      font-size: 18px;
+      color: #333;
+    }
+    .social-media {
+      margin-top: 30px;
+    }
+    .social-btn {
+      margin: 10px;
+      padding: 10px 15px;
+      border: none;
+      background-color: #004080;
+      color: white;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .social-btn:hover {
+      transform: scale(1.1);
+      background-color: #2196f3;
+    }
+  </style>
+</head>
+<body>
+  <div class="navbar">
+    <button class="nav-button">About Us</button>
+    <button class="nav-button">Our Services</button>
+    <button class="nav-button">Registration Form</button>
+    <button class="nav-button">Contact Us</button>
+  </div>
+
+  <img src="poli.png" alt="Politeknik Seberang Perai Logo" class="logo">
+
+  <div class="contact-info">
+    <p>WhatsApp: <a href="https://wa.me/60123456789" target="_blank">Send a WhatsApp message</a></p>
+    <p>Call: +60 12-345 6789</p>
+    <p>Email: haavinesh@gmail.com</p>
+    <p>Address:<br>
+      Politeknik Seberang Perai, Jalan Permatang Pauh,<br>
+      13500 Permatang Pauh, Pulau Pinang, Malaysia
+    </p>
+  </div>
+
+  <div class="social-media">
+    <button class="social-btn">Add Us on Facebook</button>
+    <button class="social-btn">Add Us on Twitter</button>
+    <button class="social-btn">Add Us on Instagram</button>
+  </div>
+
+  <script>
+    $(document).ready(function(){
+      $(".logo").fadeIn(2000);
+
+      $(".nav-button").hover(function(){
+        $(this).css("background-color", "#2196f3");
+      }, function(){
+        $(this).css("background-color", "#004080");
+      });
+
+      $(".nav-button:contains('Contact Us')").click(function(){
+        $(".contact-info").slideToggle(800);
+      });
+    });
+  </script>
+
+  <!-- Reflection Section -->
+  <!--
+  Reflection:
+  1. I learned how to use jQuery to add animations and interactivity to a webpage.
+  2. The most useful jQuery method I used was .fadeIn() and .slideToggle() for animations.
+  3. This technique can make real websites more user-friendly and visually attractive.
+  -->
+</body>
+</html>

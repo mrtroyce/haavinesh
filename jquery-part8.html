@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Theme Showcase</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+  <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+  <style>
+    /* ====== GENERAL STYLES ====== */
+    body {
+      font-family: 'Poppins', 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #e3f2fd, #fce4ec);
+      margin: 0;
+      padding: 0;
+    }
+
+    #themePage {
+      background: transparent;
+    }
+
+    /* ====== HEADER ====== */
+    .ui-header {
+      background: linear-gradient(90deg, #6a11cb, #2575fc);
+      border: none;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+    }
+
+    .ui-header .ui-title {
+      font-size: 26px !important;
+      color: #fff !important;
+      font-weight: 600;
+      text-shadow: none;
+    }
+
+    /* ====== MAIN CONTENT ====== */
+    .ui-content {
+      text-align: center;
+      padding: 30px 15px;
+    }
+
+    h2 {
+      color: #1a237e;
+      font-weight: 600;
+      margin-bottom: 15px;
+      letter-spacing: 1px;
+    }
+
+    h4 {
+      color: #424242;
+      margin-top: 25px;
+      margin-bottom: 10px;
+      font-weight: 500;
+    }
+
+    /* ====== BUTTON STYLES ====== */
+    .ui-btn {
+      border: none !important;
+      border-radius: 12px !important;
+      padding: 10px 18px !important;
+      font-weight: 600 !important;
+      text-transform: uppercase;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+      transition: all 0.3s ease;
+    }
+
+    .ui-btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 14px rgba(0,0,0,0.25);
+    }
+
+    .btn-style {
+      background: linear-gradient(90deg, #ff9800, #ffc107) !important;
+      color: white !important;
+    }
+
+    .btn-theme-b {
+      background: linear-gradient(90deg, #5a55ae, #7b88ff) !important;
+      color: white !important;
+    }
+
+    .btn-theme-a {
+      background: linear-gradient(90deg, #ec407a, #ff80ab) !important;
+      color: white !important;
+    }
+
+    /* ====== FOOTER ====== */
+    .ui-footer {
+      background: linear-gradient(90deg, #42a5f5, #478ed1);
+      color: #fff !important;
+      text-align: center;
+      border: none;
+      font-weight: 500;
+      padding: 10px 0;
+      box-shadow: 0 -2px 8px rgba(0,0,0,0.15);
+    }
+
+    .ui-footer h4 {
+      color: #fff !important;
+      font-size: 15px;
+      margin: 0;
+      text-shadow: none;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <div data-role="page" id="themePage">
+
+    <div data-role="header">
+      <h1>Theme Showcase</h1>
+    </div>
+
+    <div data-role="main" class="ui-content">
+      <h2>Styled Buttons</h2>
+      <a href="#" class="btn-style ui-btn ui-btn-inline">Button 1</a>
+      <a href="#" class="btn-style ui-btn ui-btn-inline">Button 2</a>
+
+      <h4>Buttons with Icons</h4>
+      <a href="#" class="btn-style ui-btn ui-btn-inline ui-icon-user ui-btn-icon-left">User</a>
+      <a href="#" class="btn-style ui-btn ui-btn-inline ui-icon-video ui-btn-icon-left">Video</a>
+
+      <h4>Buttons with Themes</h4>
+      <a href="#" class="btn-theme-b ui-btn ui-btn-inline">Theme B</a>
+      <a href="#" class="btn-theme-a ui-btn ui-btn-inline">Theme A</a>
+    </div>
+
+    <div class="ui-footer" data-role="footer" data-position="fixed">
+      <h4>© Haavinesh DIT4A</h4>
+    </div>
+
+  </div>
+
+</body>
+</html>
