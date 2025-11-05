@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f5f5f5;
+    }
+
+    header {
+      background-color: #111;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      font-size: 20px;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 30px auto;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+    }
+
+    a.part {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 18px 20px;
+      font-weight: bold;
+      border-bottom: 1px solid #e0e0e0;
+      background-color: #fafafa;
+      color: #222;
+      text-decoration: none;
+      transition: background 0.3s ease;
+    }
+
+    a.part:hover {
+      background-color: #f0f0f0;
+    }
+
+    .part:last-child {
+      border-bottom: none;
+    }
+
+    .icon {
+      font-size: 18px;
+      color: #666;
+    }
+  </style>
+  <!-- Font Awesome for icons -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <header>HOME PAGE</header>
+
+  <div class="container">
+    <a href="jquery-part1.html" class="part">PART 1 <i class="fas fa-video icon"></i></a>
+    <a href="jquery-part2.html" class="part">PART 2 <i class="fas fa-volume-up icon"></i></a>
+    <a href="jquery-part3.html" class="part">PART 3 <i class="fas fa-th-large icon"></i></a>
+    <a href="jquery-part4.html" class="part">PART 4 <i class="fas fa-th-large icon"></i></a>
+    <a href="jquery-part5.html" class="part">PART 5 <i class="fas fa-th-large icon"></i></a>
+    <a href="jquery-part6.html" class="part">PART 6 <i class="fas fa-th-large icon"></i></a>
+    <a href="jquery-part7.html" class="part">PART 7 <i class="fas fa-th-large icon"></i></a>
+    <a href="jquery-part8.html" class="part">PART 8 <i class="fas fa-th-large icon"></i></a>
+    <a href="jquery-part9.html" class="part">PART 9 <i class="fas fa-th-large icon"></i></a>
+    <a href="jquery-part10.html" class="part">PART 10 <i class="fas fa-th-large icon"></i></a>
+  </div>
+
+</body>
+</html>
